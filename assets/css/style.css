@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
-Project:  Zyentis
+Project:  Pharma Instinct - Pharmaceutical Company
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [Table of contents]
@@ -22,9 +22,9 @@ Project:  Zyentis
 /*------------------------------------------------------------------
 # [Color Codes]
 
- #   --primary--color: #4372fc;
+ #   --primary--color: #4372fc #00af52;
  #   --secondary--color: #ffffff;
- #   --accent--color: #041937;
+ #   --accent--color: #041937 #fb0100;
  #   --text--color: #626262;
  #   --grey--color: #6d6c6c;
  #   --grey--family--color: #d1d1d1;
@@ -61,9 +61,9 @@ h6 {
 }
 
 :root {
-    --primary--color: #4372fc;
+    --primary--color: #00af52;
     --secondary--color: #ffffff;
-    --accent--color: #041937;
+    --accent--color: #fb0100;
     --text--color: #626262;
     --grey--color: #6d6c6c;
     --grey--family--color: #d1d1d1;
