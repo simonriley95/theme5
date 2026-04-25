@@ -2567,3 +2567,12 @@ body {
 button.primary_btn {
     border: none;
 }
+
+/*custom script starts*/
+
+.logo-icon{
+    max-width: 200px;
+}
+
+/*custom script ends*/
+
