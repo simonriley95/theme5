@@ -323,7 +323,7 @@ body {
 }
 
 .header-con .navbar-expand-lg .navbar-nav {
-    gap: 65px;
+    gap: 55px;
     justify-content: center;
     align-items: center;
 }
