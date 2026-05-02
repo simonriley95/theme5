@@ -2574,5 +2574,26 @@ button.primary_btn {
     max-width: 200px;
 }
 
+.my-box-shadow{
+    box-shadow: 1px 3px 8px 4px #00000012;
+}
+
+.my-bg-white{
+    background-color: #ffffff;
+}
+
+.my-content-center{
+    text-align: center;
+}
+
+.homepage-services .article-inner-box a i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.homepage-services .article-inner-box a:hover {
+    color: #ffffff;
+}
+
 /*custom script ends*/
 
