@@ -2440,7 +2440,7 @@ body {
     border-top: 2px solid var(--primary--color);
     padding: 35px 35px;
     transition: ease-in-out 0.6s;
-    box-shadow: 0 5px 75px rgb(23 132 211 / 5%);
+    box-shadow: 1px 3px 8px 4px #00000012;
 }
 
 .contact-info-con .contct-info-box:hover {
@@ -2595,5 +2595,87 @@ button.primary_btn {
     color: #ffffff;
 }
 
+
+.my-contact-css{
+    padding: 10px 25px;
+    margin-bottom: 1.666667rem;
+    width: 100%;
+    transition: all 100ms ease-out;
+}
+
+.my-contact-icon-list {
+  /* background: #f3f3f3; */
+  padding: 20px;
+  max-width: 420px;
+  border-top: 3px solid red;
+}
+
+.my-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  text-decoration: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  color: inherit;
+}
+
+.my-contact-item:last-child {
+  border-bottom: none;
+}
+
+.my-contact-item i {
+  font-size: 35px;
+  min-width: 40px;
+  text-align: center;
+  margin-top: 5px;
+  color: #00af52;
+}
+
+.my-contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-contact-description {
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+  /* margin-bottom: 4px; */
+}
+
+.my-contact-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00a651
+}
+
+/* Email green */
+.my-contact-item:nth-child(3) .my-contact-text {
+  color: #00a651;
+}
+
+.my-contact-item:hover {
+  opacity: 0.85;
+}
+
+.my-contact-heading {
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 /*custom script ends*/
 
