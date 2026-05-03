@@ -258,6 +258,14 @@ html {
     padding-bottom: 140px;
 }
 
+.padding-top-30{
+    padding-top: 30px;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+
 .heading-title-con {
     margin-bottom: 46px;
 }
@@ -1994,7 +2002,7 @@ body {
 
 /* OUR MAIN FEATURES SECTION */
 .our-main-features-con .feature-box {
-    box-shadow: 0 5px 75px rgb(23 132 211 / 5%);
+    box-shadow: 0 5px 75px rgb(0 0 0 / 10%)
 }
 
 .our-main-features-con .col-lg-3 {
