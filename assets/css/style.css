@@ -310,7 +310,7 @@ body {
 
 /* HEADER SECTION */
 .header-con .navbar-light .navbar-nav .nav-link {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--black--color);
     font-weight: 500;
     padding: 10px 0 !important;
