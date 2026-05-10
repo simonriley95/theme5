@@ -1820,7 +1820,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 971px;
+    height: 800px;
 }
 
 .banner-img-vector {
@@ -1840,7 +1840,7 @@ body {
 }
 
 .banner-con {
-    padding-top: 170px;
+    padding-top: 100px;
     padding-bottom: 184px;
 }
 
@@ -2684,6 +2684,16 @@ button.primary_btn {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.my-ftr-logo {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.banner-1{
+    width: 800px;
 }
 /*custom script ends*/
 

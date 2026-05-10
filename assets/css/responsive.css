@@ -1203,11 +1203,12 @@
     .header-contact .contact-btn {
         color: var(--secondary--color);
         text-align: left;
-        padding: 10px 15px;
+        padding: 12px 8px;
         height: 44px;
         text-align: center;
-        min-width: 120px;
+        min-width: 80px;
         line-height: unset;
+        font-size: 12px !important;
     }
 
     /* Policy Pages */
