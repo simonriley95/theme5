@@ -1656,8 +1656,8 @@ body {
 }
 
 .vector3 {
-    bottom: -28px;
-    left: 20px;
+    bottom: -50px;
+    left: -30px;
 }
 
 .ino-icon {
@@ -2061,7 +2061,7 @@ body {
 }
 
 .main-about-us-con .main-abt-img-con img.main-abt-img1 {
-    border-radius: 100%;
+    border-radius: 15%;
     position: relative;
     z-index: 1;
 }
