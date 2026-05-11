@@ -36,6 +36,7 @@
     <!-- StyleSheet link CSS -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
@@ -149,45 +150,49 @@
             </div>
             <!-- header-con -->
         </header>
+
         <!-- BANNER SECTION -->
         <section class="float-left w-100 banner-con main-box position-relative">
-            <!-- <a href="#" class="popup-vimeo banner-play-btn">
-                <figure><img src="assets/images/play-button.png" alt="icon" class="img-fluid">
-                </figure>
-            </a> -->
             <div class="main-container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="banner-inner-con">
-                            <span class="d-block position-relative text-white">We can be</span>
-                            <h1>Your Partner <br>
-                                in Scientific
-                                Advancement.</h1>
-                            <p class="text-white">Collaborating to create intellectual wealth and  <br>
-                                solve complex research challenges.</p>
-                            <a href="clinical-research.html" class="text-decoration-none primary_btn d-inline-block">Explore
-                                Solutions</a>
-                            <a href="contact.html" class="text-decoration-none elementary_btn d-inline-block">Get
-                                a Demo</a>
-                            <!-- banner inner con -->
-                        </div>
-                        <ul class="list-unstyled mb-0 banner-social-icons">
-                            <li><a href="https://www.facebook.com/pharmainstinct/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
-                            <li><a href="https://google.com/"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                        </ul>
+                        <!-- Slider Wrapper -->
+                        <div class="banner-slider">
+                            
+                            <!-- Slide 1 -->
+                            <div class="banner-inner-con">
+                                <span class="d-block position-relative text-white">We can be</span>
+                                <h1>Your Partner <br> in Scientific Advancement.</h1>
+                                <p class="text-white">Collaborating to create intellectual wealth and solve complex research challenges.</p>
+                                <a href="clinical-research.html" class="text-decoration-none primary_btn d-inline-block">Explore Solutions</a>
+                                <a href="contact.html" class="text-decoration-none elementary_btn d-inline-block">Get a Demo</a>
+                            </div>
 
-                        <!-- col -->
+                            <!-- Slide 2 -->
+                            <div class="banner-inner-con">
+                                <span class="d-block position-relative text-white">Expertise in</span>
+                                <h1>Innovative <br> Clinical Trials.</h1>
+                                <p class="text-white">Delivering high-quality data and efficient trial management for global success.</p>
+                                <a href="clinical-trials.html" class="text-decoration-none primary_btn d-inline-block">View Trials</a>
+                                <a href="contact.html" class="text-decoration-none elementary_btn d-inline-block">Contact Us</a>
+                            </div>
+
+                        </div> 
+                        <!-- THIS IS THE NEW CONTROLS HOLDER -->
+                        <div class="slider-controls"></div>
+
+                        <ul class="list-unstyled mb-0 banner-social-icons">
+                            ...
+                        </ul>
                     </div>
-                    <!-- row -->
                 </div>
-                <!-- main container -->
             </div>
-            <!-- banner con -->
         </section>
+
+        
         <!-- home banner outer -->
     </div>
+    
     <!-- SEARCH BAR -->
     <div id="search" class="">
         <span class="close">X</span>
@@ -316,6 +321,7 @@
     <!-- Our Services -->
      <section
         class="float-left w-100 position-relative news-and-articles-con homepage-services padding-top padding-bottom main-box my-bg-white">
+        <figure><img src="assets/images/vector1.png" alt="vector" class="position-absolute img-fluid vector1"></figure>
         <div class="main-container">
             <div class="heading-title-con text-center">
                 <span class="special-text d-block wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.05s">Our Services</span>
@@ -523,7 +529,7 @@
                     <div class="col-xl-4 col-lg-3 col-md-5 col-sm-12 col-12 all_column">
                         <div class="icon">
                             <h6 class="heading">Location</h6>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2882.0541963468745!2d77.3766799!3d28.6224761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5c41085e29f%3A0x22d800b5c1d734!2sClinical%20Research%20Institute%20In%20Chandigarh%20%26%20Noida%3DPharma%20Instinct!5e1!3m2!1sen!2sin!4v1777740225221!5m2!1sen!2sin" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2882.0541963468745!2d77.3766799!3d28.6224761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5c41085e29f%3A0x22d800b5c1d734!2sClinical%20Research%20Institute%20In%20Chandigarh%20%26%20Noida%3DPharma%20Instinct!5e1!3m2!1sen!2sin!4v1777740225221!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -556,5 +562,26 @@
     <script src="assets/js/preloader.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/search.js"></script>
+
+    <!-- JQuery (if not already present) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+$('.banner-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 800,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    // This container must exist in your HTML (see step 2)
+    appendArrows: $('.slider-controls'), 
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+});
+</script>
 </body>
 </html>

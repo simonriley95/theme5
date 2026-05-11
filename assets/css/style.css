@@ -1088,7 +1088,7 @@ body {
 }
 
 .footer-con .middle_portion .icon {
-    padding: 74px 0 74px 30px;
+    padding: 74px 0 15px 30px;
 }
 
 .footer-con .middle_portion .icon h6 {
@@ -2694,6 +2694,103 @@ button.primary_btn {
 
 .banner-1{
     width: 820px;
+}
+
+<!-- Slick Slider CSS -->
+    /* Prevent content flash before slider loads */
+/* Styling the Side Controls */
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Container for the buttons */
+/* .slider-controls {
+    display: flex;
+    gap: 15px;          /* Space between buttons *
+    margin-top: 20px;   /* Distance from the text/buttons above *
+    position: relative;
+    z-index: 99;
+    left: 80px;
+} */
+ /* MOBILE FIRST (Default styles) */
+.slider-controls {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally on mobile */
+    gap: 15px;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;            /* Ensure it spans the width to allow centering */
+}
+
+/* DESKTOP VIEW (Web View) */
+/* This kicks in only when the screen is wider than 992px */
+@media (min-width: 992px) {
+    .slider-controls {
+        justify-content: flex-start; /* Reset centering */
+        position: absolute;          /* Allows precise placement */
+        left: 630px;                /* Your requested desktop position */
+        bottom: 0;                   /* Adjust as needed */
+    }
+}
+
+/* MOBILE FIRST (Default styles) */
+.slider-controls {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally on mobile */
+    gap: 15px;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;            /* Ensure it spans the width to allow centering */
+}
+
+/* DESKTOP VIEW (Web View) */
+/* This kicks in only when the screen is wider than 992px */
+@media (min-width: 992px) {
+    .slider-controls {
+        justify-content: flex-start; /* Reset centering */
+        position: absolute;          /* Allows precise placement */
+        left: 630px;                /* Your requested desktop position */
+        bottom: 0;                   /* Adjust as needed */
+    }
+}
+
+/* Base styling for both buttons */
+.slick-prev, .slick-next {
+    position: static;    /* Removes the default absolute positioning */
+    transform: none;     /* Removes the vertical centering trick */
+    background: rgb(0 175 82 / 19%);
+    border: 1px solid rgb(0 175 82);
+    color: #00af52;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: #fe0001;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Reset Slick's default pseudo-elements */
+.slick-prev::before, .slick-next::before {
+    display: none;
 }
 /*custom script ends*/
 
