@@ -251,11 +251,11 @@ html {
 }
 
 .padding-top {
-    padding-top: 137px;
+    padding-top: 50px;
 }
 
 .padding-bottom {
-    padding-bottom: 140px;
+    padding-bottom: 50px;
 }
 
 .padding-top-30{
@@ -1924,10 +1924,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 673px;
+    height: 400px;
 }
 
-.sub_banner_outer::after {
+/* .sub_banner_outer::after {
     content: "";
     height: 289px;
     width: 359px;
@@ -1935,7 +1935,7 @@ body {
     bottom: 0;
     background-color: var(--primary--color);
     position: absolute;
-}
+} */
 
 .sub-banner-img-vector {
     right: 0;
@@ -1944,8 +1944,8 @@ body {
 }
 
 .sub-banner-con {
-    padding-top: 144px;
-    padding-bottom: 150px;
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 /* breadcrumb */
@@ -2658,6 +2658,10 @@ button.primary_btn {
   color: #00a651
 }
 
+.my-page-title {
+    text-align: center;
+}
+
 /* Email green */
 .my-contact-item:nth-child(3) .my-contact-text {
   color: #00a651;
@@ -2672,6 +2676,7 @@ button.primary_btn {
     text-align: center;
     font-size: 22px;
 }
+
 
 
 .visually-hidden {
