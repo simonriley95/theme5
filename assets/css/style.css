@@ -1829,7 +1829,7 @@ body {
     z-index: 1;
 }
 
-.home_banner_outer::after {
+/* .home_banner_outer::after {
     content: "";
     height: 289px;
     width: 459px;
@@ -1837,10 +1837,10 @@ body {
     bottom: 0;
     background-color: var(--primary--color);
     position: absolute;
-}
+} */
 
 .banner-con {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 184px;
 }
 
@@ -2696,80 +2696,76 @@ button.primary_btn {
     width: 820px;
 }
 
-<!-- Slick Slider CSS -->
-    /* Prevent content flash before slider loads */
-/* Styling the Side Controls */
-.slick-prev, .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
+/* --- 1. BANNER STRUCTURE --- */
+.home_banner_outer {
+    overflow: hidden; 
+    position: relative;
 }
 
-/* Container for the buttons */
-/* .slider-controls {
-    display: flex;
-    gap: 15px;          /* Space between buttons *
-    margin-top: 20px;   /* Distance from the text/buttons above *
+.banner-inner-con {
     position: relative;
+    z-index: 2;
+}
+
+/* --- 2. THE IMAGE (Vector/Banner) --- */
+/* Desktop */
+@media (min-width: 992px) {
+    .banner-img-vector {
+        position: absolute !important;
+        right:  0px; /* Adjust this to move the image left/right */
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 800px;
+        z-index: 0;
+        display: block;
+    }
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .banner-img-vector {
+        position: relative !important;
+        width: 100% !important;
+        margin: 20px auto;
+        display: block;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        transform: none !important;
+    }
+}
+
+/* --- 3. SLIDER CONTROLS (Buttons) --- */
+.slider-controls {
+    display: flex;
+    gap: 15px;
     z-index: 99;
-    left: 80px;
-} */
- /* MOBILE FIRST (Default styles) */
-.slider-controls {
-    display: flex;
-    justify-content: center; /* Centers buttons horizontally on mobile */
-    gap: 15px;
-    margin-top: 50px;
-    position: relative;
-    width: 100%;            /* Ensure it spans the width to allow centering */
-}
-
-/* DESKTOP VIEW (Web View) */
-/* This kicks in only when the screen is wider than 992px */
-@media (min-width: 992px) {
-    .slider-controls {
-        justify-content: flex-start; /* Reset centering */
-        position: absolute;          /* Allows precise placement */
-        left: 630px;                /* Your requested desktop position */
-        bottom: 0;                   /* Adjust as needed */
-    }
-}
-
-/* MOBILE FIRST (Default styles) */
-.slider-controls {
-    display: flex;
-    justify-content: center; /* Centers buttons horizontally on mobile */
-    gap: 15px;
     margin-top: 30px;
-    position: relative;
-    width: 100%;            /* Ensure it spans the width to allow centering */
 }
 
-/* DESKTOP VIEW (Web View) */
-/* This kicks in only when the screen is wider than 992px */
+/* Desktop Placement */
 @media (min-width: 992px) {
     .slider-controls {
-        justify-content: flex-start; /* Reset centering */
-        position: absolute;          /* Allows precise placement */
-        left: 630px;                /* Your requested desktop position */
-        bottom: 0;                   /* Adjust as needed */
+        position: absolute;
+        left: 630px; 
+        bottom: 10px;
+        margin-top: 0;
     }
 }
 
-/* Base styling for both buttons */
+/* Mobile Placement */
+@media (max-width: 991px) {
+    .slider-controls {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* --- 4. BUTTON STYLING (Arrows) --- */
 .slick-prev, .slick-next {
-    position: static;    /* Removes the default absolute positioning */
-    transform: none;     /* Removes the vertical centering trick */
-    background: rgb(0 175 82 / 19%);
+    position: static;
+    transform: none;
+    background: rgb(0 175 82 / 19%); /* Your Green Theme */
     border: 1px solid rgb(0 175 82);
     color: #00af52;
     width: 50px;
@@ -2783,14 +2779,13 @@ button.primary_btn {
 }
 
 .slick-prev:hover, .slick-next:hover {
-    background: #fe0001;
+    background: #fe0001; /* Your Red Theme */
     color: #ffffff;
-    border-color: #ffffff;
+    border-color: #fe0001;
 }
 
-/* Reset Slick's default pseudo-elements */
 .slick-prev::before, .slick-next::before {
-    display: none;
+    display: none; /* Hides default Slick text */
 }
 /*custom script ends*/
 

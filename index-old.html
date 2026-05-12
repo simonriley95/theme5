@@ -44,8 +44,8 @@
     <a id="button"></a>
     <!--  -->
     <div class="home_banner_outer float-left w-100 position-relative">
-    <!-- STATIC IMAGE CONTAINER (Controlled by JS) -->
-    
+        <figure><img src="assets/images/banner-img.png" alt="image" class="position-absolute banner-img-vector banner-1">
+        </figure>
         <!-- HEADER SECTION -->
          <header class="w-100 float-left header-con position-relative main-box">
             <div class="main-container">
@@ -68,7 +68,7 @@
                                 <a class="nav-link p-0 active" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link p-0" href="about-us.html">About us</a>
+                                <a class="nav-link p-0" href="about.html">About</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown2" role="button"
@@ -94,7 +94,7 @@
                                 <a class="nav-link dropdown-toggle p-0" href="index.html" id="navbarDropdown5" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                                    <a class="dropdown-item" href="about-us.html">About</a>
+                                    <a class="dropdown-item" href="about.html">About</a>
                                     <a class="dropdown-item" href="contact.html">Contact</a>
                                     <a class="dropdown-item" href="services.html">Services</a>
                                     <a class="dropdown-item" href="faq.html">Faq's</a>
@@ -151,76 +151,47 @@
             <!-- header-con -->
         </header>
 
-        <figure>
-        <img id="dynamic-banner-img" src="assets/images/banner-img.png" alt="Banner Image" class="position-absolute banner-img-vector banner-1">
-       </figure>
+        <!-- BANNER SECTION -->
+        <section class="float-left w-100 banner-con main-box position-relative">
+            <div class="main-container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Slider Wrapper -->
+                        <div class="banner-slider">
+                            
+                            <!-- Slide 1 -->
+                            <div class="banner-inner-con">
+                                <span class="d-block position-relative text-white">We can be</span>
+                                <h1>Your Partner <br> in Scientific Advancement.</h1>
+                                <p class="text-white">Collaborating to create intellectual wealth and solve complex research challenges.</p>
+                                <a href="clinical-research.html" class="text-decoration-none primary_btn d-inline-block">Explore Solutions</a>
+                                <a href="contact.html" class="text-decoration-none elementary_btn d-inline-block">Get a Demo</a>
+                            </div>
 
-       <!-- BANNER SECTION -->
-    <section class="float-left w-100 banner-con main-box position-relative">
-        <div class="main-container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <!-- SLIDER WRAPPER -->
-                    <div class="banner-slider">
-                        
-                        <!-- Slide 1 -->
-                        <div class="banner-inner-con" data-img="assets/images/banner-img.png">
-                            <!-- <span class="d-block position-relative text-white">We can be</span> -->
-                            <h1>Client Satisfaction <br> matters most <br> to us.</h1>
-                            <!-- <p class="text-white">Collaborating to create intellectual wealth and solve complex research challenges.</p> -->
-                            <a href="clinical-research.html" class="primary_btn">Explore Solutions</a>
-                            <a href="contact.html" class="elementary_btn">Get a Demo</a>
-                        </div>
+                            <!-- Slide 2 -->
+                            <div class="banner-inner-con">
+                                <span class="d-block position-relative text-white">Expertise in</span>
+                                <h1>Innovative <br> Clinical Trials.</h1>
+                                <p class="text-white">Delivering high-quality data and efficient trial management for global success.</p>
+                                <a href="clinical-trials.html" class="text-decoration-none primary_btn d-inline-block">View Trials</a>
+                                <a href="contact.html" class="text-decoration-none elementary_btn d-inline-block">Contact Us</a>
+                            </div>
 
-                        <!-- Slide 2 -->
-                        <div class="banner-inner-con" data-img="assets/images/about-banner-img.png">
-                            <!-- <span class="d-block position-relative text-white">Expertise in</span> -->
-                            <h1>Quality We believe in <br>  excellence<br> in no Explanations.</h1>
-                            <!-- <p class="text-white">Delivering high-quality data and efficient trial management for global success.</p> -->
-                            <a href="clinical-trials.html" class="primary_btn">View Trials</a>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="banner-inner-con" data-img="assets/images/banner-img.png">
-                            <!-- <span class="d-block position-relative text-white">We can be</span> -->
-                            <h1>Project <br> Execution.</h1>
-                            <!-- <p class="text-white">Collaborating to create intellectual wealth and solve complex research challenges.</p> -->
-                            <a href="clinical-research.html" class="primary_btn">Explore Solutions</a>
-                            <a href="contact.html" class="elementary_btn">Get a Demo</a>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="banner-inner-con" data-img="assets/images/banner-img.png">
-                            <!-- <span class="d-block position-relative text-white">We can be</span> -->
-                            <h1>Client words <br> final words.</h1>
-                            <!-- <p class="text-white">Collaborating to create intellectual wealth and solve complex research challenges.</p> -->
-                            <a href="clinical-research.html" class="primary_btn">Explore Solutions</a>
-                            <a href="contact.html" class="elementary_btn">Get a Demo</a>
-                        </div>
-
-                        <!-- Slide 5 -->
-                        <div class="banner-inner-con" data-img="assets/images/banner-img.png">
-                            <!-- <span class="d-block position-relative text-white">We can be</span> -->
-                            <h1>Devotion is <br> the only way.</h1>
-                            <!-- <p class="text-white">Collaborating to create intellectual wealth and solve complex research challenges.</p> -->
-                            <a href="clinical-research.html" class="primary_btn">Explore Solutions</a>
-                            <a href="contact.html" class="elementary_btn">Get a Demo</a>
-                        </div>
-
-                    </div> <!-- /banner-slider -->
-
-                    <!-- THE CONTROLS HOLDER -->
+                        </div> 
+                        <!-- THIS IS THE NEW CONTROLS HOLDER -->
                     <div class="slider-controls"></div>
 
-                    <!-- SOCIAL ICONS -->
                     <ul class="list-unstyled mb-0 banner-social-icons">
-                         <!-- ... (Your existing social icons) ... -->
+                        ...
                     </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+
+        
+        <!-- home banner outer -->
+    </div>
     
     <!-- SEARCH BAR -->
     <div id="search" class="">
@@ -267,7 +238,7 @@
                                     </li>
                                 </ul>
                             </div> -->
-                            <a href="about-us.html" class="text-decoration-none primary_btn d-inline-block wow fadeInRight"
+                            <a href="about.html" class="text-decoration-none primary_btn d-inline-block wow fadeInRight"
                                 data-wow-duration="2s" data-wow-delay="0.05s">Get
                                 Started</a>
                             <!-- heading title con -->
@@ -530,7 +501,7 @@
                             <h6 class="heading">Useful Links</h6>
                             <ul class="list-unstyled mb-0">
                                 <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
-                                <li><i class="fa-solid fa-arrow-right"></i><a href="about-us.html">About us</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="about.html">About us</a></li>
                                 <!-- <li><i class="fa-solid fa-arrow-right"></i><a href="faq.html">FAQs</a></li> -->
                                 <li><i class="fa-solid fa-arrow-right"></i><a href="work-with-us.html">Work with us</a></li>
                                 <li><i class="fa-solid fa-arrow-right"></i><a href="contact.html">Contact us</a>
@@ -598,33 +569,18 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
-$(document).ready(function() {
-    // 1. Initialize the Slider
-    var $bannerSlider = $('.banner-slider');
-
-    $bannerSlider.slick({
-        dots: false,
-        infinite: true,
-        speed: 800,
-        fade: true,         // Smooth text transition
-        autoplay: true,
-        autoplaySpeed: 5000, // 5 seconds exactly
-        arrows: true,
-        appendArrows: $('.slider-controls'), // Puts buttons in your custom div
-        prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>'
-    });
-
-    // 2. Image Swapping Logic
-    $bannerSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        // Find the image path in the data-img attribute of the NEXT slide
-        var nextImage = $(slick.$slides[nextSlide]).data('img');
-        
-        // Smoothly swap the main banner image
-        $('#dynamic-banner-img').fadeOut(300, function() {
-            $(this).attr('src', nextImage).fadeIn(300);
-        });
-    });
+$('.banner-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 800,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    // This container must exist in your HTML (see step 2)
+    appendArrows: $('.slider-controls'), 
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
 });
 </script>
 </body>
